@@ -1,0 +1,43 @@
+Age [39 50 38 53 28 37 49 52 31 42 30 23 32 40 34 25 43 54 35 59 56 19 20 45
+ 22 48 21 24 57 44 41 29 18 47 46 36 79 27 67 33 76 17 55 61 70 64 71 68
+ 66 51 58 26 60 90 75 65 77 62 63 80 72 74 69 73 81 78 88 82 83 84 85 86
+ 87]
+
+Workclass [' State-gov' ' Self-emp-not-inc' ' Private' ' Federal-gov' ' Local-gov'
+ ' ?' ' Self-emp-inc' ' Without-pay' ' Never-worked']
+
+
+Education [' Bachelors' ' HS-grad' ' 11th' ' Masters' ' 9th' ' Some-college'
+ ' Assoc-acdm' ' Assoc-voc' ' 7th-8th' ' Doctorate' ' Prof-school'
+ ' 5th-6th' ' 10th' ' 1st-4th' ' Preschool' ' 12th']
+
+Education-num [13  9  7 14  5 10 12 11  4 16 15  3  6  2  1  8]
+
+
+Marital-status [' Never-married' ' Married-civ-spouse' ' Divorced'
+ ' Married-spouse-absent' ' Separated' ' Married-AF-spouse' ' Widowed']
+
+Occupation [' Adm-clerical' ' Exec-managerial' ' Handlers-cleaners' ' Prof-specialty'
+ ' Other-service' ' Sales' ' Craft-repair' ' Transport-moving'
+ ' Farming-fishing' ' Machine-op-inspct' ' Tech-support' ' ?'
+ ' Protective-serv' ' Armed-Forces' ' Priv-house-serv']
+
+Relationship [' Not-in-family' ' Husband' ' Wife' ' Own-child' ' Unmarried'
+ ' Other-relative']
+
+Race [' White' ' Black' ' Asian-Pac-Islander' ' Amer-Indian-Eskimo' ' Other']
+
+
+Sex [' Male' ' Female']
+
+
+Native-country [' United-States' ' Cuba' ' Jamaica' ' India' ' ?' ' Mexico' ' South'
+ ' Puerto-Rico' ' Honduras' ' England' ' Canada' ' Germany' ' Iran'
+ ' Philippines' ' Italy' ' Poland' ' Columbia' ' Cambodia' ' Thailand'
+ ' Ecuador' ' Laos' ' Taiwan' ' Haiti' ' Portugal' ' Dominican-Republic'
+ ' El-Salvador' ' France' ' Guatemala' ' China' ' Japan' ' Yugoslavia'
+ ' Peru' ' Outlying-US(Guam-USVI-etc)' ' Scotland' ' Trinadad&Tobago'
+ ' Greece' ' Nicaragua' ' Vietnam' ' Hong' ' Ireland' ' Hungary'
+ ' Holand-Netherlands']
+
+
