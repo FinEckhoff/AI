@@ -6,17 +6,27 @@ import keras
 import adult
 import NN
 import svm
+import kMeans
 def main():
+    """
     NN.init()
     model = NN.train(adult.X_train, adult.Y_train, adult.X_val, adult.Y_val)
     NN.eval(adult.X_test, adult.Y_test)
     model.save("./model.keras")
-    """
+
     svm.init()
     model = svm.train(adult.X_train, adult.Y_train)
     eval = svm.eval(adult.X_test, adult.Y_test)
     print(eval)
     """
+
+
+    kMeans.init(9)
+    model = kMeans.train(adult.X_train)
+    print(model.cluster_centers_)
+    print(model.n_iter_)
+    kMeans.eval(adult.X_train)
+
 
 
 

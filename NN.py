@@ -6,7 +6,7 @@ model = keras.Model
 def init():
     global model
     model = Sequential([
-        Dense(32, activation='relu', input_shape=(27,)),
+        Dense(32, activation='relu', input_shape=(23,)),
         Dense(64, activation='relu'),
         Dense(32, activation='relu'),
         Dense(1, activation='sigmoid'),

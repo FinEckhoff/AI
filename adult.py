@@ -54,8 +54,8 @@ correlation_matrix = numeric_columns.corr()
 
 data['Occupation'] = data['Occupation'].astype('category')
 ohe = OneHotEncoder(sparse_output=False)
-ohe_race = OneHotEncoder(sparse_output=False)
-transformedRACE = ohe_race.fit_transform(data[['Race']])
+#ohe_race = OneHotEncoder(sparse_output=False)
+#transformedRACE = ohe_race.fit_transform(data[['Race']])
 transformedOCC = ohe.fit_transform(data[['Occupation']])
 #print(ohe.categories_)
 #print(transformed[0].size)
@@ -64,8 +64,8 @@ transformedOCC = ohe.fit_transform(data[['Occupation']])
 for index, cat in enumerate(ohe.categories_):
     data[cat] = transformedOCC[index]
 
-for index, cat in enumerate(ohe_race.categories_):
-    data[cat] = transformedRACE[index]
+data['White'] = data['Race'].apply(lambda x: 1 if x == ' White' else 0)
+
 
 data = data.drop(columns=['Occupation'])
 data = data.drop(columns=['Race'])
@@ -82,6 +82,12 @@ sns.heatmap(correlation_matrix, annot=True, fmt=".2f", cmap='coolwarm')
 plt.title('Correlation Matrix of Numerical Columns')
 plt.show()
 """
+
+print(f"Data keys: {data.keys()}")
+
+keys = data.keys()
+keys = keys.drop('Income')
+print(f"Traindata keys: {keys}")
 dataset = data.values
 X = dataset
 Income = data['Income']
